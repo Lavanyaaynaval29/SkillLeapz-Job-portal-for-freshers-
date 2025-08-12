@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="Studentdash.css"> </head>
+<body>
+    <div class="header">
+        <div class="logo">Job Portal</div>
+        <nav class="main-nav">
+            <a href="#" class="nav-item active">Dashboard</a>
+            <a href="#" class="nav-item">My Profile</a>
+            <a href="#" class="nav-item">Applied Jobs</a>
+            <a href="#" class="nav-item">Job Listings</a>
+            <a href="#" class="nav-item">Notifications</a>
+            <a href="#" class="nav-item">Logout</a>
+        </nav>
+    </div>
+
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="profile-summary">
+                <img src="Assests/studentlogo.jpg"class="profile-pic">
+                <h3>Welcome, [Student Name]!</h3>
+                <p>Web Developer</p> <a href="#" class="edit-profile-btn">Edit Profile</a>
+            </div>
+
+            <nav class="sidebar-nav">
+                <a href="#" class="sidebar-item active">Overview</a>
+                <a href="#" class="sidebar-item">My Applications</a>
+                <a href="#" class="sidebar-item">Saved Jobs</a>
+                <a href="#" class="sidebar-item">Messages</a>
+                <a href="#" class="sidebar-item">Settings</a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <section class="dashboard-section welcome-message">
+                <h2>Dashboard Overview</h2>
+                <p>Hello [Student Name], here's a quick look at your activity and new opportunities.</p>
+            </section>
+
+            <section class="dashboard-section stats-cards">
+                <div class="card">
+                    <h3>3</h3>
+                    <p>Applications Submitted</p>
+                </div>
+                <div class="card">
+                    <h3>1</h3>
+                    <p>Interview Scheduled</p>
+                </div>
+                <div class="card">
+                    <h3>5</h3>
+                    <p>Saved Jobs</p>
+                </div>
+                <div class="card">
+                    <h3>2</h3>
+                    <p>New Notifications</p>
+                </div>
+            </section>
+
+            <section class="dashboard-section recent-activity">
+                <h2>Recent Activity</h2>
+                <ul>
+                    <li>Applied for **Frontend Developer** at Tech Solutions Inc. (2 days ago)</li>
+                    <li>Interview scheduled for **UI/UX Designer** at Creative Studios (Tomorrow at 10 AM)</li>
+                    <li>New job posting: **Junior Backend Developer** at DataCorp (1 hour ago)</li>
+                </ul>
+            </section>
+
+            <section class="dashboard-section job-recommendations">
+                <h2>Job Recommendations</h2>
+                <div class="job-card">
+                    <h3>Software Engineer Intern</h3>
+                    <p>ABC Tech Solutions</p>
+                    <p class="location">Chennai, India</p>
+                    <a href="#" class="view-job-btn">View Details</a>
+                </div>
+                <div class="job-card">
+                    <h3>Data Analyst - Fresher</h3>
+                    <p>Analytics Pro</p>
+                    <p class="location">Bangalore, India</p>
+                    <a href="#" class="view-job-btn">View Details</a>
+                </div>
+                </section>
+        </main>
+    </div>
+</body>
+</html>

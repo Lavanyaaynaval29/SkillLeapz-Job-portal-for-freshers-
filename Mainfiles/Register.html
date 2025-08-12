@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="Register.css">
+</head>
+<body>
+    <div class="container">
+        <h1>REGISTER</h1>
+        <div class="registration-forms" >
+            <form action="Studentdash.html" method="get"> 
+                <div class="student-registration">
+                    <h2 class="active">Student Registration</h2>
+                    <div class="form-group">
+                        <label for="studentName">Name</label>
+                        <input type="text" id="studentName" placeholder="Name" > </div>
+                    <div class="form-group">
+                        <label for="studentEmail">Email</label>
+                        <input type="email" id="studentEmail" placeholder="Email"> </div>
+
+                    <div class="form-group skills-upload">
+                        <label for="studentSkills">Skills</label>
+                        <input type="text" id="studentSkills" placeholder="List your skills (e.g., Python, UI/UX)">
+                        <input type="file" id="skillsCertificateUpload" class="hidden-file-input">
+                        <label for="skillsCertificateUpload" class="upload-button">UPLOAD CERTIFICATE</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="skillsCertificateDisplay">Skills Certificate</label>
+                        <input type="text" id="skillsCertificateDisplay" placeholder="No file chosen" readonly>
+                    </div>
+
+                    <div class="form-group resume-upload-section">
+                        <label for="studentResume">Resume</label>
+                        <input type="file" id="resumeUpload" class="hidden-file-input">
+                        <label for="resumeUpload" class="upload-button">UPLOAD RESUME</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="studentResumeDisplay">Selected Resume</label>
+                        <input type="text" id="studentResumeDisplay" placeholder="No file chosen" readonly>
+                    </div>
+                    <button type="submit" class="register-button">REGISTER</button>
+                </div>
+            </form>
+
+            <div class="company-registration">
+                <h2 class="clickable">Company Registration</h2>
+                <div class="form-group">
+                    <label for="companyName">Company Name</label>
+                    <input type="text" id="companyName" placeholder="Company Name" > </div>
+                <div class="form-group">
+                    <label for="companyEmail">Email</label>
+                    <input type="email" id="companyEmail" placeholder="Email" > </div>
+                <div class="form-group">
+                    <label for="companyPassword">Password</label>
+                    <input type="password" id="companyPassword" placeholder="Password"> </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <style>
+    .navbar {
+    background: #fff;
+    padding: 15px ;
+    border-bottom: none; 
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+    }
+    .navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 ;
+    padding: 10px;
+    }
+    .nav-links{
+      margin-left: auto;
+    }
+    .nav-links a {
+    text-decoration: none;
+    color: rgb(28, 28, 94);
+    font-weight: bold;
+    font-size: 20px;
+    margin: 15px; 
+  }
+   .nav-links a:hover {
+    color: #4169a5;
+  }
+
+  .nav-buttons {
+    display: flex;
+    gap: 10px;
+  }
+   .btn {
+    padding: 6px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 6px; 
+    text-decoration: none;
+    border: 1px solid #ccc;
+    transition: 0.3s;
+  }
+
+  .btn.login {
+    background: white;
+    color: #0d6efd;
+    border: 1px solid #0d6efd;
+  }
+
+  .btn.login:hover {
+    background: #0d6efd;
+    color: white;
+  }
+    .btn.register {
+    background: #0d6efd;
+    color: white;
+    border: 1px solid #0d6efd;
+  }
+
+  .btn.register:hover {
+    background: #084298;
+    border-color: #084298;
+  }
+  .banner{
+    background-image: url(Assests/banner.png);
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    width: 100%; 
+    object-fit: cover;
+  }
+  .banner-content{
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .banner h1{
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+  .banner p{
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  .banner button{
+    background-color:rgb(23, 23, 65) ;
+    border:none;
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .banner button :hover{
+    background-color:#084298 
+  }
+  .about{
+    
+    background-color: #f9f9f9;
+
+  }  
+  .about-content {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    
+  } 
+   .about-text h2 {
+    font-size: 40px;
+   
+  }
+  .about-text p {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  .about-text{
+    flex: 3;
+  }
+  .about-image{
+    flex: 1;
+  }
+  .about-image img {
+    width: 500px;
+  } 
+  /* Styling for the grid container */
+.features-grid {
+    display: grid; /* <--- THIS IS KEY for the 2x2 layout */
+    grid-template-columns: repeat(2, 1fr); /* <--- THIS IS KEY for two columns */
+    gap: 30px; 
+    max-width: 1000px; 
+    margin: 0 auto; 
+}
+
+/* Styling for individual feature items */
+.feature-item {
+    background-color: #fff; 
+    padding: 30px;
+    border-radius: 8px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); 
+    text-align: left; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.feature-item .feature-icon {
+    width: 60px; 
+    height: 60px;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    margin-bottom: 20px; 
+}
+
+.feature-item .feature-icon img {
+    width: 40px; 
+    height: 40px;
+}
+
+@media (max-width: 768px) {
+    .features-grid {
+        grid-template-columns: 1fr; 
+    }
+}
+
+.contact-us-mini {
+    padding: 60px 20px; 
+    text-align: center;
+    background-color: #f8f8f8; 
+    color: #333;
+    font-size: 0.95em; 
+}
+
+.contact-us-mini h2 {
+    font-size: 2em; 
+    margin-bottom: 20px; 
+    color: #007bff;
+}
+
+.contact-us-mini p {
+    max-width: 600px;
+    margin: 0 auto 30px auto; 
+    line-height: 1.5;
+    color: #555;
+}
+
+.contact-links-mini {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 25px; 
+    margin-bottom: 40px; 
+}
+
+.contact-link-item {
+    display: flex; 
+    align-items: center;
+    text-decoration: none; 
+    color: #0056b3; 
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.contact-link-item .icon {
+    font-size: 1.4em; 
+    margin-right: 8px; 
+    color: #007bff; 
+}
+
+.contact-link-item:hover {
+    color: #003f8e;
+    text-decoration: underline; 
+}
+
+.copyright-text {
+    font-size: 0.85em;
+    color: #777;
+    margin-top: 40px;
+}
+
+
+@media (max-width: 600px) {
+    .contact-links-mini {
+        flex-direction: column;
+        align-items: center; 
+        gap: 15px; 
+    }
+}
+
+
+
+    </style>
+</head>
+<body>
+    <header class="navbar">
+  <div class="container">
+    <div class="logo">
+      <img src="Assests/logo.jpg" width="140px" >
+    </div>
+    <div class="nav-links" >
+    <nav>
+        <a href="#">Home</a>
+        <a href="#About section">About</a>
+        <a href="#Featuress">Features</a>
+        <a href="#contact-section">Contact</a>
+    </nav>
+  </div>
+    <div class="nav-buttons">
+      <a href="Login.html" class="btn login">Login</a>
+      <a href="Register.html" class="btn register">Register</a>
+    </div>
+  </div>
+  <!--BANNER-->
+  <section class="banner">
+    <div class="banner-content">
+       <h1>Leap into Your Career with Confidence </h1>
+       <p> Connecting fresh talent with the right opportunities </p>
+       <button>Gets Started</button>
+    </div>
+  </section>
+  <!--ABOUT-->
+  <section id="About section" class="about">
+    <div class="about-content">
+        <div class="about-text">
+            <h2>About SkillLeapz</h2>
+            <p>
+                Bridging the gap between students and companies. SkillLeapz provides a dedicated platform for freshers to launch their careers.We empower young professionals by connecting from directly with employers seeking new talent. 
+            </p>
+        </div>
+        <div class="about-image">
+            <img src="Assests/about.png" >
+        </div>
+    </div>
+</section>
+<!--FEATURES-->
+<section id="Featuress" class="features-section">
+  <center>  <h2>Features</h2> </center>
+    <div class="features-grid">
+      
+        <div class="feature-item">
+            <div class="feature-icon">
+                <img src="Assests/skill icon.png">
+            </div>
+            <h3>Skill-Based Matching</h3>
+            <p>Match candidates with job-based on their skills.</p>
+        </div>
+        <div class="feature-item">
+            <div class="feature-icon">
+                <img src="Assests/communication.png">
+            </div>
+            <h3>Direct Communication</h3>
+            <p>Allow students and employers to chat directly for faster shortlisting.</p>
+        </div>
+
+        <div class="feature-item">
+            <div class="feature-icon">
+                <img src="Assests/internship.png">
+            </div>
+            <h3>Internship & Micro Projects</h3>
+            <p>Find short-term projects and internships to build real experience.</p>
+        </div>
+
+        <div class="feature-item">
+            <div class="feature-icon">
+                <img src="Assests/portfolio.png">
+            </div>
+            <h3>Portfolio Building</h3>
+            <p>Help students craft a portfolio that shows practical work and projects.</p>
+        </div>
+        </div>
+</section>
+<!--CONTACT-->
+<section id="contact-section" class="contact-us-mini">
+    <h2>Get in Touch</h2>
+    <p>We're here to help! Connect with us through the channels below.</p>
+
+    <div class="contact-links-mini">
+        <a href="mailto:info@skillleapz.com" class="contact-link-item">
+            <span class="icon">📧</span>
+            <span>info@skillleapz.com</span>
+        </a>
+        <a href="https://linkedin.com/company/skillleapz" target="_blank" class="contact-link-item">
+            <span class="icon">🔗</span>
+            <span>LinkedIn</span>
+        </a>
+        </div>
+
+    <p class="copyright-text">
+        &copy; 2025 SkillLeapz. All rights reserved.
+    </p>
+</section>
+</header>
+</body>
+</html>

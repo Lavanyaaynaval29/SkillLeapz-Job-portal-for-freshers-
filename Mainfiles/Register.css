@@ -1,0 +1,172 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 2.2em;
+    font-weight: bold;
+    text-align: left;
+}
+
+.registration-forms {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
+}
+
+.student-registration,
+.company-registration {
+    flex: 1;
+    min-width: 380px;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    font-size: 1.2em;
+    font-weight: normal;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+h2.active {
+    color: #333;
+}
+
+h2.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #007bff;
+}
+
+h2.clickable {
+    color: #666;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+h2.clickable:hover {
+    color: #007bff;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-size: 0.9em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #333;
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+#studentSkills {
+    flex-grow: 1;
+    min-width: 150px;
+}
+
+.skills-upload, .resume-upload-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hidden-file-input {
+    display: none;
+}
+
+.upload-button {
+    background-color: #e0e0e0;
+    color: #333;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    flex-shrink: 0;
+    display: inline-block;
+    text-align: center;
+    line-height: normal;
+}
+
+.upload-button:hover {
+    background-color: #d0d0d0;
+}
+
+input[type="text"][readonly] {
+    cursor: default;
+    background-color: #f0f0f0;
+}
+
+.register-button {
+    background-color: #003366;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.register-button:hover {
+    background-color: #002244;
+}
+
+.company-registration {
+    position: relative;
+    padding-bottom: 150px;
+}
+
+.company-registration::after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 180px;
+    height: 180px;
+    
+}
